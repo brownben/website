@@ -12,7 +12,7 @@
       </h2>
       <a
         href="https://github.com/brownben"
-        class="outline-none border border-gray-400 mt-8 inline-block px-4 py-2 rounded font-bold text-gray-500 transition duration-300 hover:border-blue-400 hover:text-blue-700 focus:border-blue-500 focus:text-blue-700 focus:ring-2 focus:ring-blue-300"
+        class="outline-none border border-gray-300 mt-8 inline-block px-4 py-2 rounded font-bold text-gray-500 transition duration-300 hover:border-blue-400 hover:text-blue-700 focus:border-blue-500 focus:text-blue-700 focus:ring-2 focus:ring-blue-300"
         >Checkout My GitHub</a
       >
     </header>
