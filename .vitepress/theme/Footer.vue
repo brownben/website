@@ -24,7 +24,7 @@
       <p class="block text-gray-600 font-heading">
         Created By
         <a
-          href="https://brownben.dev"
+          href="https://benbrown.dev"
           class="font-bold transition duration-300 text-blue-600 hover:text-blue-800 focus:text-blue-800"
         >
           Ben Brown
