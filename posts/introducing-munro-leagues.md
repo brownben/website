@@ -2,7 +2,7 @@
 title: Introducing Munro Leagues
 date: 2020-08-26
 author: Ben Brown
-excerpt: Munro Leagues started as part of my Advanced Higher Computing project, it is a league results calculator. It calculates the overall results for a series of events, and it is designed to be easy to use and require very little effort for league coordinators and event organisers to use.
+excerpt: Originally created as part of my Advanced Higher Computing project, Munro makes calculating sporting league results easy. It calculates the overall results for a series of events, and is designed to be simple to use and require very little effort from event organisers.
 ---
 
 Munro Leagues started as part of my Advanced Higher Computing project, it is a league results calculator. It calculates the overall results for a series of events, and it is designed to be easy to use and require very little effort for league coordinators and event organisers to use. It is now hosting the results for several leagues across Scotland, including: the Sprintelope, Northern Night Cup, Fight with the Night leagues, with over 125 events and almost 5000 results in the system.
@@ -10,10 +10,10 @@ Munro Leagues started as part of my Advanced Higher Computing project, it is a l
 Munro makes viewing everything about a league easy, you can view all the events, dates, links to further event details and links to Routegadget and Winsplits to make sure you can find everything in one place. You can view results for all events and the overall results for the league, with options to sort and filter the results by name, club, age, time/ score allowing you to view any subset of results in whatever order you want. Munro is easy to use on the go, as well as looking good on all screen sizes; it has support for offline caching, so you can access the data even when you don't have a signal.
 
 <figure>
-  <!-- <img
-    src="../assets/images/MunroOriginalDesign.png"
+  <img
+    src="/MunroOriginalDesign.png"
     alt="Original Deisgn for Munro"
-  /> -->
+  />
   <figcaption>
     The Original Design from my Advanced Higher Project
   </figcaption>
@@ -24,10 +24,10 @@ When I had to originally decide on a project for Advanced Higher Computing, I or
 To make it as easy as possible for everyone to use and to make the upload process take a matter of seconds, I had to make the results file upload as simple as possible, therefore it takes almost any CSV (any file with a sensible format should work), and has been tested with the exports from the main results software. It matches peoples results automatically, and can even match when people enter under with different details like variations in their name (e.g. Pete and Peter), and has a simple admin interface to fix it in seconds when it occasionally makes a mistake.
 
 <figure>
-  <!-- <img
-    src="../assets/images/MunroLaterDesign.png"
+  <img
+    src="/MunroLaterDesign.png"
     alt="Later Design of Munro Displayed on Laptop and Mobile"
-  /> -->
+  />
   <figcaption>
     A Later Redesign which Improved the usability on Mobile
   </figcaption>
@@ -38,10 +38,10 @@ Although I created it for my Advanced Higher project, I have continued to add fe
 This summer I have also made further enhancements to allow you to manage "virtual" leagues using Munro, such as the (not) Sprintelope league in Edinburgh, where an event gets uploaded to MapRun each week. I have just added a way to import the results directly from MapRun, it reads the results file directly so there is no hassle with downloading and uploading files. There is also now a form for people to submit their result for automatic inclusion in the results if they didn't want to use MapRun.
 
 <figure>
-  <!-- <img
-    src="../assets/images/MunroLatestDesign.png"
+  <img
+    src="/MunroLatestDesign.png"
     alt="Latest Design of Munro Displayed on Laptop and Mobile"
-  /> -->
+  />
   <figcaption>The Current Design</figcaption>
 </figure>
 
