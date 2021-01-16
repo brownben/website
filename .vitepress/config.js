@@ -7,7 +7,15 @@ const { getPosts } = require('./getPosts')
 module.exports = {
   title: 'Ben Brown',
   description: "Ben Brown's Website",
-
+  head: [
+    [
+      'link',
+      {
+        rel: 'icon',
+        href: '/logo.png'
+      }
+    ]
+  ],
   customData: {
     posts: getPosts()
   },
