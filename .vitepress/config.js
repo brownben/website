@@ -7,6 +7,7 @@ const { getPosts } = require('./getPosts')
 module.exports = {
   title: 'Ben Brown',
   description: "Ben Brown's Website",
+  lang: 'en-GB',
   head: [
     [
       'link',

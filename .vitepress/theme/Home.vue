@@ -41,8 +41,9 @@
                 class="text-blue-600 hover:text-blue-800 transition"
                 aria-label="read more"
                 :href="href"
-                >Read more →</a
               >
+                Read more →
+              </a>
             </div>
           </div>
         </article>

@@ -12,7 +12,7 @@ exports.getPosts = function getPosts() {
       const post = {
         title: data.title,
         href: `/posts/${file.replace(/\.md$/, '.html')}`,
-        date: formatDate(data.date),
+        date: formatDate(data?.date ?? 0),
         excerpt: excerpt || data.excerpt
       }
 
