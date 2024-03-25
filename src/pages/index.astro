@@ -10,6 +10,16 @@ import ProjectSummary from '../components/ProjectSummary.astro'
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/png" href="/blueB.png" />
     <meta name="description" content="Hi I'm Ben." />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: light)"
+      content="#f9fafb"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#0f172a"
+    />
 
     <style is:global>
       @font-face {
@@ -21,10 +31,11 @@ import ProjectSummary from '../components/ProjectSummary.astro'
       }
     </style>
   </head>
-  <body class="bg-gray-50">
-    <div class="mx-auto max-w-lg font-sans px-8">
+
+  <body class="bg-gray-50 dark:bg-gray-900">
+    <div class="mx-auto max-w-screen-lg px-8 font-sans">
       <Header />
-      <main class="grid gap-10 pb-16">
+      <main class="grid gap-10 pb-24">
         <ProjectSummary
           title="Munro Leagues"
           links={[
@@ -38,7 +49,7 @@ import ProjectSummary from '../components/ProjectSummary.astro'
           League results calculator which makes it easy for organisers by
           accepting many different results formats and solving common mistakes.
           With fast-loading results with search and sort capabilities, it powers
-          leagues across the UK, with over 340 events and 21000 results.
+          leagues across the UK, with over 420 events and 25,964 results.
         </ProjectSummary>
         <ProjectSummary
           title="Neural Search on Modern Consumer Devices"
