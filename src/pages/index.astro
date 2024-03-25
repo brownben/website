@@ -1,95 +1,52 @@
 ---
+import Layout from '../layouts/root.astro'
 import Header from '../components/Header.astro'
 import ProjectSummary from '../components/ProjectSummary.astro'
 ---
 
-<html lang="en">
-  <head>
-    <title>Ben Brown</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/png" href="/blueB.png" />
-    <meta name="description" content="Hi I'm Ben." />
-    <meta
-      name="theme-color"
-      media="(prefers-color-scheme: light)"
-      content="#f9fafb"
-    />
-    <meta
-      name="theme-color"
-      media="(prefers-color-scheme: dark)"
-      content="#0f172a"
-    />
-
-    <style is:global>
-      @font-face {
-        font-family: 'Geist Var';
-        font-weight: 100 900;
-        font-display: swap;
-        font-style: oblique 0deg 10deg;
-        src: url('/GeistVariableVF.woff2') format('woff2');
-      }
-    </style>
-  </head>
-
-  <body class="bg-gray-50 dark:bg-gray-900">
-    <div class="mx-auto max-w-screen-lg px-8 font-sans">
-      <Header />
-      <main class="grid gap-10 pb-24">
-        <ProjectSummary
-          title="Munro Leagues"
-          links={[
-            { location: 'https://munroleagues.com/', text: 'Check it out' },
-            {
-              location: 'https://github.com/brownben/munro',
-              text: 'View source',
-            },
-          ]}
-        >
-          League results calculator which makes it easy for organisers by
-          accepting many different results formats and solving common mistakes.
-          With fast-loading results with search and sort capabilities, it powers
-          leagues across the UK, with over 420 events and 25,964 results.
-        </ProjectSummary>
-        <ProjectSummary
-          title="Neural Search on Modern Consumer Devices"
-          links={[
-            { location: '/Ben_Brown_L4_Project.pdf', text: 'Read report' },
-          ]}
-        >
-          My fourth-year university project investigated if changes in modern
-          processor designs, such as unified memory and neural accelerators can
-          be used in consumer devices (such as Apple's M1) to improve the
-          performance of dense information retrieval tasks using neural
-          networks.
-        </ProjectSummary>
-        <ProjectSummary
-          title="Bang"
-          links={[
-            {
-              location: 'https://github.com/brownben/bang2',
-              text: 'View source',
-            },
-          ]}
-        >
-          My programming language, a reference counted bytecode interpreter
-          written in Rust. A small dynamic kind of functional language, complete
-          with a linter, formatter and typechecker.
-        </ProjectSummary>
-        <ProjectSummary
-          title="Orienteering Games"
-          links={[
-            {
-              location: 'https://orienteering-games.vercel.app/',
-              text: 'Check them out',
-            },
-          ]}
-        >
-          A selection of mini-games created over lockdown to test your
-          navigational and map reading abilities. Created for the Lockdown
-          Orienteering competitions, and have been played thousands of times.
-        </ProjectSummary>
-      </main>
-    </div>
-  </body>
-</html>
+<Layout>
+  <Header />
+  <main class="grid gap-10 pb-24">
+    <ProjectSummary
+      title="Munro Leagues"
+      links={[
+        { location: 'https://munroleagues.com/', text: 'Check it out' },
+        { location: 'https://github.com/brownben/munro', text: 'View source' },
+      ]}
+    >
+      League results calculator which makes it easy for organisers by accepting
+      many different results formats and solving common mistakes. With
+      fast-loading results with search and sort capabilities, it powers leagues
+      across the UK, with over 420 events and 25,000 results.
+    </ProjectSummary>
+    <ProjectSummary
+      title="Neural Search on Modern Consumer Devices"
+      links={[{ location: '/Ben_Brown_L4_Project.pdf', text: 'Read report' }]}
+    >
+      My fourth-year university project investigated if changes in modern
+      processor designs, such as unified memory and neural accelerators can be
+      used in consumer devices (such as Apple's M1) to improve the performance
+      of dense information retrieval tasks using neural networks.
+    </ProjectSummary>
+    <ProjectSummary
+      title="Bang"
+      links={[
+        { location: 'https://github.com/brownben/bang2', text: 'View source' },
+      ]}
+    >
+      My programming language, a reference counted bytecode interpreter written
+      in Rust. A small dynamic kind of functional language, complete with a
+      linter, formatter and typechecker.
+    </ProjectSummary>
+    <ProjectSummary
+      title="Orienteering Games"
+      links={[
+        { location: 'https://o-games.vercel.app/', text: 'Check them out' },
+      ]}
+    >
+      A selection of mini-games created over lockdown to test your navigational
+      and map reading abilities. Created for the Lockdown Orienteering
+      competitions, and have been played thousands of times.
+    </ProjectSummary>
+  </main>
+</Layout>

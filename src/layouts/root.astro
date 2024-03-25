@@ -1,0 +1,40 @@
+---
+const { title = 'Ben Brown', description = "Hi I'm Ben." } = Astro.props
+---
+
+<html lang="en">
+  <head>
+    <title>{title}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="/blueB.png" />
+    <meta name="description" content={description} />
+
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: light)"
+      content="#f9fafb"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#0f172a"
+    />
+
+    <style is:global>
+      @font-face {
+        font-family: 'Geist Var';
+        font-weight: 100 900;
+        font-display: swap;
+        font-style: oblique 0deg 10deg;
+        src: url('/GeistVariableVF.woff2') format('woff2');
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-50 dark:bg-gray-900">
+    <div class="mx-auto max-w-screen-lg px-8 font-sans">
+      <slot />
+    </div>
+  </body>
+</html>
