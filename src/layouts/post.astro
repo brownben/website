@@ -1,0 +1,37 @@
+---
+import Header from '../components/Header.astro'
+import BaseLayout from '../layouts/root.astro'
+const { frontmatter } = Astro.props
+---
+
+<BaseLayout title={frontmatter.title} description={frontmatter.description}>
+  <header class="py-12">
+    <a
+      href="/"
+      class="text-3xl font-black tracking-tight text-gray-500 outline-none ring-blue-400 transition duration-200 hover:text-blue-600 focus:text-blue-600 focus-visible:ring md:text-4xl dark:text-gray-300"
+    >
+      Ben Brown
+    </a>
+  </header>
+
+  <main class="mb-24 max-w-prose">
+    <article>
+      {
+        frontmatter.date && (
+          <p class="font-semibold tracking-tight text-gray-500 dark:text-gray-300">
+            {frontmatter.date}
+          </p>
+        )
+      }
+      <h1
+        class="mb-12 text-pretty text-4xl font-black tracking-tighter text-gray-900 md:text-5xl dark:text-gray-100"
+      >
+        {frontmatter.title}
+      </h1>
+
+      <div class="prose prose-slate dark:prose-invert">
+        <slot />
+      </div>
+    </article>
+  </main>
+</BaseLayout>
