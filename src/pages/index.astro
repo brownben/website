@@ -14,29 +14,40 @@ import ProjectSummary from '../components/ProjectSummary.astro'
         { location: 'https://github.com/brownben/munro', text: 'View source' },
       ]}
     >
-      League results calculator which makes it easy for organisers by accepting
-      many different results formats and solving common mistakes. With
-      fast-loading results with search and sort capabilities, it powers leagues
-      across the UK, with over 420 events and 25,000 results.
+      Calculates and displays the overall standings for sporting leagues.
+      Designed to be simple for organisers, by accepting results in multiple
+      formats and solving common problems. With fast-loading and interactive
+      results, it powers leagues across the UK, with over 480 events and 32,000
+      results stored.
+    </ProjectSummary>
+    <ProjectSummary
+      title="Bang"
+      links={[
+        { location: 'https://github.com/brownben/bang3', text: 'View source' },
+      ]}
+    >
+      My programming language. A strongly typed, functional, bytecode
+      interpreter written in Rust. Complete with a custom linter, opinionated
+      code-formatter, type-checker, and language server.
     </ProjectSummary>
     <ProjectSummary
       title="Neural Search on Modern Consumer Devices"
       links={[{ location: '/Ben_Brown_L4_Project.pdf', text: 'Read report' }]}
     >
-      My fourth-year university project investigated if changes in modern
-      processor designs, such as unified memory and neural accelerators can be
-      used in consumer devices (such as Apple's M1) to improve the performance
-      of dense information retrieval tasks using neural networks.
+      My fourth-year university research project investigated if changes in
+      modern processor designs — such as unified memory and neural accelerators
+      — can be used to improve the performance of dense information retrieval
+      tasks using neural networks on consumer hardware (like Apple's M1).
     </ProjectSummary>
     <ProjectSummary
-      title="Bang"
+      title="xc"
       links={[
-        { location: 'https://github.com/brownben/bang2', text: 'View source' },
+        { location: 'https://github.com/brownben/xc', text: 'View source' },
       ]}
     >
-      My programming language, a reference counted bytecode interpreter written
-      in Rust. A small dynamic kind of functional language, complete with a
-      linter, formatter and typechecker.
+      An experimental parallel test-runner for Python, using sub-interpreters to
+      isolate the tests in a single process. Includes integrated code-coverage
+      collection and automatic test discovery.
     </ProjectSummary>
     <ProjectSummary
       title="Orienteering Games"
@@ -44,9 +55,10 @@ import ProjectSummary from '../components/ProjectSummary.astro'
         { location: 'https://o-games.vercel.app/', text: 'Check them out' },
       ]}
     >
-      A selection of mini-games created over lockdown to test your navigational
-      and map reading abilities. Created for the Lockdown Orienteering
-      competitions, and have been played thousands of times.
+      A selection of mini-games to test navigational/ map reading abilities
+      created for Lockdown Orienteering. The games include a 3D-maze,
+      spot-the-difference, and drawing the best route on a map. They have been
+      played thousands of times by people from all over the world.
     </ProjectSummary>
   </main>
 </Layout>
